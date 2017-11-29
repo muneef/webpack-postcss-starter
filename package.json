@@ -1,0 +1,8 @@
+{
+  "name": "postcss-starter",
+  "version": "0.1.0",
+  "description": "PostCSS Started",
+  "main": "index.js",
+  "author": "Muneef Hameed",
+  "license": "MIT"
+}
