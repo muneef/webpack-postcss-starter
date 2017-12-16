@@ -8,12 +8,15 @@ $fill-bright: #56659c;
 $fill-light: #999;
 $fill-grey: #777;
 $fill-alt: #7d1ac3;
+$fill-dark: #151520;
 
 $type-base: 'renner', helvetica, sans-serif;
 $type-light: 'rennerlight', helvetica, sans-serif;
+$type-alt: 'Space Mono', monospace;
 
 body {
   font-family: $type-base;
+  margin:0;
   color: color($fill-alt shade(50%));
 }
 
@@ -43,8 +46,22 @@ body {
 }
 
 .Links {
-  display: inline-block;
-  float: right;
+  width: 100%;
+  &__left {
+    float: left;
+  }
+  &__right {
+    float: right;
+  }
+  &__Logo {
+    float: left;
+    img {
+      width: 42px;
+      height: 42px;
+      border-radius: 42px;
+      margin-top: 1.5rem;
+    }
+  }
 }
 
 .LinksIcon {
@@ -71,9 +88,9 @@ body {
     color: $fill-alt;
     font-size: ms(3)rem;
     &--small {
-      font-size: ms(1)rem;
-      font-family: $type-base;
-      color: $fill-alt;
+      font-size: ms(2)rem;
+      font-family: $type-alt;
+      color: $fill-dark;
       margin-bottom: ms(4)rem;
       display: block;
       margin-top: ms(4)rem;
@@ -81,6 +98,7 @@ body {
   }
 }
 
+/** List */
 .List {
   margin-top: 1.75rem;
   margin-left: 0;
@@ -118,4 +136,12 @@ body {
       color: color($fill-alt shade(50%)); /* == color(red l(50%)); */
     }
   }
+}
+
+/** Footer */
+.Footer {
+  background-color: #f1f7f8;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #758c90;
 }
