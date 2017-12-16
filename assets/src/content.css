@@ -3,13 +3,14 @@
   --ms-ratios: 1.35;
 }
 
-/* Vars -- */
+/* Color -- */
 $fill-bright: #56659c;
 $fill-light: #999;
 $fill-grey: #777;
 $fill-alt: #7d1ac3;
 $fill-dark: #151520;
 
+/* Type -- */
 $type-base: 'renner', helvetica, sans-serif;
 $type-light: 'rennerlight', helvetica, sans-serif;
 $type-alt: 'Space Mono', monospace;
@@ -131,11 +132,11 @@ body {
     flex: 1;
     padding-left: ms(2)rem;
     p{
-      font-size: ms(0)rem;
+      font-size: ms(1)rem;
       font-weight: 100;
       line-height: 1.5;
       margin-top: 0.5rem;
-      color: color($fill-alt shade(50%)); /* == color(red l(50%)); */
+      color: color($fill-bright tint(15%)); /* == color(red l(50%)); */
     }
   }
 }
