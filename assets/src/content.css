@@ -60,6 +60,7 @@ body {
       height: 42px;
       border-radius: 42px;
       margin-top: 1.5rem;
+      /*filter: grayscale(100%);*/
     }
   }
 }
@@ -111,6 +112,7 @@ body {
     margin-bottom: ms(1)rem;
     display: flex;
     align-items: flex-start;
+    width: 60%;
   }
   &__image {
     width: 40px;
