@@ -1,13 +1,20 @@
 :root {
-  --ms-bases: 1, 0.75;
-  --ms-ratios: 2;
+  --ms-bases: 1;
+  --ms-ratios: 1.35;
 }
 
+/* Vars -- */
 $fill-bright: #56659c;
+$fill-light: #999;
+$fill-grey: #777;
+$fill-alt: #7d1ac3;
+
+$type-base: 'renner', helvetica, sans-serif;
+$type-light: 'rennerlight', helvetica, sans-serif;
 
 body {
-  font-family: 'renner', sans-serif;
-  color: #777;
+  font-family: $type-base;
+  color: color($fill-alt shade(50%));
 }
 
 .Content{   
@@ -23,10 +30,8 @@ body {
     }
   }
   &__title{
-    color: #fff;
     font-weight: 600;
-    font-size: ms(4)rem;
-    /*font-size: 59px;*/
+    font-size: ms(2)rem;
     min-width: 70%;
     line-height: 1.15;
   }
@@ -54,26 +59,24 @@ body {
   margin-top: 40vh;
   max-height: 80%;
   &__body {
-    width: 40%;
+    width: 60%;
     font-size: ms(2)rem;
     line-height: 1.5;
   }
   &__content {
-    margin-bottom: 1rem;
-    padding-bottom: 2rem;
+    margin-bottom: ms(6)rem;
+    padding-bottom: ms(2)rem;
   }
   &__title {
-    color: #56659c;
-    font-size: ms(4)rem;
+    color: $fill-alt;
+    font-size: ms(3)rem;
     &--small {
-      font-size: 1rem;
-      color: #8ba2c9;
-      font-family: 'rennerlight';
-      text-transform: uppercase;
-      letter-spacing: 0.25rem;
-      color: #999;
-      margin-bottom: 2rem;
+      font-size: ms(1)rem;
+      font-family: $type-base;
+      color: $fill-alt;
+      margin-bottom: ms(4)rem;
       display: block;
+      margin-top: ms(4)rem;
     }
   }
 }
@@ -82,11 +85,37 @@ body {
   margin-top: 1.75rem;
   margin-left: 0;
   list-style: none;
-  padding-left: 0;  
+  padding-left: 0;    
   &__item {
     font-size: ms(2)rem;
-    border-bottom: solid 1px #eee;
+    /*border-bottom: solid 1px #eee;*/
     padding-bottom: ms(1)rem;
     margin-bottom: ms(1)rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  &__image {
+    width: 40px;
+    /*display: inline-block;*/
+  }
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*padding-left: 1rem;*/
+    font-size: ms(1)rem;
+    color: color($fill-alt shade(25%)); /* == color(red l(50%)); */
+  }
+  &__content {
+    flex: 1;
+    padding-left: ms(2)rem;
+    p{
+      font-size: ms(0)rem;
+      font-weight: 100;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+      color: color($fill-alt shade(50%)); /* == color(red l(50%)); */
+    }
   }
 }
