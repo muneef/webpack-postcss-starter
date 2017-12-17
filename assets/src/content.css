@@ -48,6 +48,7 @@ body {
 
 .Links {
   width: 100%;
+  margin-top: 2rem;
   &__left {
     float: left;
   }
@@ -57,8 +58,8 @@ body {
   &__Logo {
     float: left;
     img {
-      width: 42px;
-      height: 42px;
+      width: 60px;
+      height: 60px;
       border-radius: 42px;
       margin-top: 1.5rem;
       /*filter: grayscale(100%);*/
@@ -83,7 +84,7 @@ body {
     line-height: 1.5;
   }
   &__content {
-    margin-bottom: ms(6)rem;
+    margin-bottom: ms(1)rem;
     padding-bottom: ms(2)rem;
   }
   &__title {
@@ -141,10 +142,34 @@ body {
   }
 }
 
+.Hero {
+  min-height: 480px;
+  max-height: 480px;
+  position: relative;  
+  margin-bottom: ms(2)rem;
+  lost-utility: clearfix;
+  .Head{
+    &__content {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  lost-utility: clearfix;
+}
+
+.Body {
+  lost-utility: clearfix;
+}
+
 /** Footer */
 .Footer {
   background-color: #f1f7f8;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #758c90;
+  p {
+    font-size: ms(1)rem;
+  }
 }

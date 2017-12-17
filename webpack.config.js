@@ -19,7 +19,11 @@ const PATHS = {
 
 module.exports = {
     context: path.resolve(__dirname, 'assets'),
-    entry:'./src/webpack.entry.js',
+    entry:[
+      'webpack-dev-server/client?http://localhost:9000',
+      'webpack/hot/dev-server',
+      './src/webpack.entry.js'
+    ],
     output: {
       path: path.resolve(__dirname, './built'),
       filename: 'bundle.js',
