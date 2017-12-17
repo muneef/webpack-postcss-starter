@@ -131,7 +131,7 @@ body {
   }
   &__content {
     flex: 1;
-    padding-left: ms(2)rem;
+    padding-left: ms(3)rem;
     p{
       font-size: ms(1)rem;
       font-weight: 100;
