@@ -55,6 +55,11 @@ body {
   &__right {
     float: right;
   }
+  &__item {
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+  }
   &__Logo {
     float: left;
     img {
